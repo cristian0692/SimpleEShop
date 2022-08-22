@@ -22,7 +22,12 @@ namespace EShopSystem.DAL
         public DbSet<Departament> Departaments { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<EShopSystem.Models.Invoice> Invoices { get; set; }
+
+        public DbSet<EShopSystem.Models.InvoiceDetail> InvoiceDetails { get; set; }
+
         public DbSet<PaymentMode> PaymentModes { get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -31,8 +36,5 @@ namespace EShopSystem.DAL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public System.Data.Entity.DbSet<EShopSystem.Models.Invoice> Invoices { get; set; }
-
-        public System.Data.Entity.DbSet<EShopSystem.Models.InvoiceDetail> InvoiceDetails { get; set; }
-    }
+ }
 }
