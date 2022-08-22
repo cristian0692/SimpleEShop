@@ -1,0 +1,34 @@
+﻿@model EShopSystem.Models.Departament
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Departament</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartamentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartamentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartamentIsActtive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartamentIsActtive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DepartamentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

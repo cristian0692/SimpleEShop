@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\DepartamentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="DAL\ShopDbContext.cs" />
@@ -203,6 +204,11 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Departaments\Create.cshtml" />
+    <Content Include="Views\Departaments\Delete.cshtml" />
+    <Content Include="Views\Departaments\Details.cshtml" />
+    <Content Include="Views\Departaments\Edit.cshtml" />
+    <Content Include="Views\Departaments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
