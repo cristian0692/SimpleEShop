@@ -137,15 +137,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202208221635496_FirstMigration.cs" />
-    <Compile Include="Migrations\202208221635496_FirstMigration.designer.cs">
-      <DependentUpon>202208221635496_FirstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202208221646473_FirstMigration.cs" />
+    <Compile Include="Migrations\202208221646473_FirstMigration.designer.cs">
+      <DependentUpon>202208221646473_FirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Departament.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\InvoiceDetail.cs" />
     <Compile Include="Models\PaymentMode.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,8 +221,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202208221635496_FirstMigration.resx">
-      <DependentUpon>202208221635496_FirstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202208221646473_FirstMigration.resx">
+      <DependentUpon>202208221646473_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

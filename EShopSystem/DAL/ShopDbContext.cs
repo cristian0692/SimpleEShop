@@ -13,7 +13,8 @@ namespace EShopSystem.DAL
 
             public ShopDbContext() : base("ShopConnection")
             {
-
+            Database.SetInitializer<ShopDbContext>(new ShopInitializer());
+            //Database.SetInitializer(new CreateDatabaseIfNotExists<ShopDbContext>());
             }
 
         public DbSet<Product> Products { get; set; }
