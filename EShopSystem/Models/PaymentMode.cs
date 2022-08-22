@@ -10,7 +10,5 @@ namespace EShopSystem.Models
         public int PaymentModeId { get; set; }
         public string PaymentModeName { get; set; }
         public bool PaymentModeIsActive { get; set; }
-
-
     }
 }
